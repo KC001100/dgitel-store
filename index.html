@@ -321,13 +321,65 @@
         applyTheme(localStorage.getItem('theme') || 'dark');
 
         const policyContents = {
-            'Refund Policy': `<h4>Last updated: August 2025</h4><p>Since our products are digital and delivered instantly, all sales are final. We do not offer refunds.</p><p>If you face any technical issues, please contact our support team for assistance.</p><p><strong>Exceptions:</strong> Accidental duplicate purchases can be reported within 24 hours for a possible resolution.</p>`,
-            'Terms & Conditions': `<h4>1. Acceptance</h4><p>By using our service, you agree to these terms.</p><h4>2. License</h4><p>Products are for personal or specified professional use only. Reselling is prohibited.</p><h4>3. Account</h4><p>You are responsible for your account's confidentiality.</p>`,
-            'Delivery Policy': `<h4>Instant Digital Delivery</h4><p>Products are delivered electronically upon successful payment. You will receive an email and can also access them in your "Purchase History".</p>`,
-            'Privacy Policy': `<h4>1. Data Collection</h4><p>We collect your name, email, and phone for transactions.</p><h4>2. Data Use</h4><p>We use your data to process orders and provide customer service. We do not sell your data.</p><h4>3. Security</h4><p>Payment details are handled by a secure third-party gateway.</p>`,
-            'Socials': ``
+            'Refund Policy': `<h4>Last updated: August 2025</h4><p>Your Order Cancellation Rights
+You are entitled to cancel Your Order within 7 days without giving any reason for doing so.
+
+The deadline for cancelling an Order is 7 days from the date on which You received the Goods or on which a third party you have appointed, who is not the carrier, takes possession of the product delivered.
+
+In order to exercise Your right of cancellation, You must inform Us of your decision by means of a clear statement. You can inform us of your decision by:
+
+By email: useallsite044@gmail.com
+
+By visiting this page on our website: https://dgitel-store.vercel.app/
+
+Conditions for Returns
+In order for the Goods to be eligible for a return, please make sure that:
+
+The Goods were purchased in the last 7 days
+The Goods are in the original packaging
+The following Goods cannot be returned:
+
+The supply of Goods made to Your specifications or clearly personalized.
+The supply of Goods which according to their nature are not suitable to be returned, deteriorate rapidly or where the date of expiry is over.
+The supply of Goods which are not suitable for return due to health protection or hygiene reasons and were unsealed after delivery.
+The supply of Goods which are, after delivery, according to their nature, inseparably mixed with other items.
+We reserve the right to refuse returns of any merchandise that does not meet the above return conditions in our sole discretion.
+
+Only regular priced Goods may be refunded. Unfortunately, Goods on sale cannot be refunded. This exclusion may not apply to You if it is not permitted by applicable law./strong> Accidental duplicate purchases can be reported within 24 hours for a possible resolution.</p>`,
+            'Terms & Conditions': `<h4>1. Interpretation and Definitions
+Interpretation
+The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+
+Definitions
+For the purposes of these Terms and Conditions:
+
+Affiliate means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
+
+Country refers to: Madhya Pradesh, India
+
+Company (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to KGS MARKET.
+
+Device means any device that can access the Service such as a computer, a cellphone or a digital tablet.
+
+Service refers to the Website.
+
+Terms and Conditions (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement has been created with the help of the Terms and Conditions Generator.
+
+Third-party Social Media Service means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
+
+Website refers to KGS MARKET, accessible from https://dgitel-store.vercel.app/
+
+You means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</h4><p>By using our service, you agree to these terms.</p><h4>2. License</h4><p>Products are for personal or specified professional use only. Reselling is prohibited's confidentiality.</p>`,
+            'Privacy Policy': `<h4>1.Usage Data is collected automatically when using the Service.
+
+Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.
+
+When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.
+
+We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device. </h4><p>We collect your name, email, and phone for transactions.</p><h4>2. Data Use</h4><p>We use your data to process orders and provide customer service. We do not sell your data.</h4><p>Payment details are handled by a secure third-party gateway.</p>`,
+          
         };
-        const policyButtons = ['Refund Policy', 'Terms & Conditions', 'Delivery Policy', 'Privacy Policy', 'Socials'];
+        const policyButtons = ['Refund Policy', 'Terms & Conditions', 'Privacy Policy', ];
         DOMElements.bottomBar.innerHTML = policyButtons.map(p => `<button data-policy="${p}">${p}</button>`).join('');
         DOMElements.bottomBar.addEventListener('click', e => {
             const key = e.target.dataset.policy;
