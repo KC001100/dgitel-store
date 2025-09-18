@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONLINE</title>
+    <title>🔻ONLINE</title>
     <style>
         /* Global Styles & Theme */
         :root {
             /* Dark Theme (Default) */
-            --bg-color: #121212;
-            --surface-color: #1e1e1e;
+            --bg-color:#1C1917;
+            --surface-color:black ;
             --surface-color-rgb: 30, 30, 30; /* UPDATE: RGB version for transparency */
             --primary-text: white;
-            --secondary-text: #b3b3b3;
-            --accent-color: #178236 ;
-            --accent-hover: #0088cc;
+            --secondary-text: #b3b3#b3bb3;
+            --accent-color: green ;
+            --accent-hover: #0#088cc;
             --border-color: #333333;
             --card-shadow: 0 10px 30px rgba(0,0,0,0.3);
             --input-bg: #2a2a2a;
@@ -23,7 +23,7 @@
 
         body.light-theme {
             /* Light Theme */
-            --bg-color: #f0f2f5;
+            --bg-color:#D4D4D8;
             --surface-color: #ffffff;
             --surface-color-rgb: 255, 255, 255; /* UPDATE: RGB version for transparency */
             --primary-text: #1c1e21whit;
@@ -46,21 +46,21 @@
         /* Header */
         header {
             position: fixed; top: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: space-between;
-            padding: 15px 20px;
+            padding: 10px 19px;
             /* UPDATE: Corrected background to use the theme-aware RGB variable */
             background-color: rgba(var(--surface-color-rgb), 0.8);
             backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--border-color); z-index: 1000; transition: background-color 0.3s, border-color 0.3s;
+            border-bottom: 2px solid var(--border-color); z-index: 1000; transition: background-color 0.3s, border-color 0.3s;
         }
         .header-brand { display: flex; align-items: center; gap: 12px; font-size: 1.2rem; font-weight: 600; }
-        .header-brand img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; }
+        .header-brand img { width: 37px; height: 37px; border-radius: 60%; object-fit: cover; }
         .header-controls { display: flex; align-items: center; gap: 10px; }
         .hamburger-btn, .theme-toggle-btn { background: none; border: none; font-size: 24px; color: var(--primary-text); cursor: pointer; transition: color 0.3s; }
 
         /* Sidebar Navigation */
         .sidebar {
-            position: fixed; top: 0; left: -280px; width: 280px; height: 100%; background-color: var(--surface-color);
-            z-index: 1002; transition: left 0.4s ease, background-color 0.3s; display: flex; flex-direction: column;
+            position: fixed; top: 0; left: -270px; width: 155px; height: 100%; background-color: var(--surface-color);
+            z-index: 1002; transition: left 0.1s ease, background-color 0.1s; display: flex; flex-direction: column;
         }
         .sidebar.open { left: 0; }
         .sidebar-header { padding: 20px; border-bottom: 1px solid var(--border-color); transition: border-color 0.3s;}
@@ -126,12 +126,12 @@
         .modal.open .modal-content { transform: scale(1); }
         .modal-close-btn { position: absolute; top: 15px; right: 15px; font-size: 24px; background: none; border: none; color: var(--secondary-text); cursor: pointer; transition: color 0.3s;}
         
-        #product-detail-modal img { width: 100%; border-radius: 16px; margin-bottom: 20px; }
-        #product-detail-modal h2 { flex-grow: 1; margin-right: 10px; }
+        #product-detail-modal img { width: 100%; border-radius: 16px; margin-bottom: 2px; }
+        #product-detail-modal h2 { flex-grow: 1; margin-right: 11px; }
         #product-detail-modal p { color: var(--secondary-text); line-height: 1.7; margin: 0; transition: color 0.3s;}
         .price-buy-wrapper {
             display: flex; justify-content: space-between; align-items: center; background-color: var(--input-bg);
-            padding: 15px 20px; border-radius: 12px; margin: 20px 0; transition: background-color 0.3s;
+            padding: 15px 18px; border-radius: 12px; margin: 20px 0; transition: background-color 0.3s;
         }
         .title-wrapper { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; }
         #detail-bookmark-btn { background: none; border: none; font-size: 2rem; cursor: pointer; color: var(--secondary-text); transition: color 0.3s, transform 0.3s; padding: 0 5px; line-height: 1; }
@@ -180,7 +180,7 @@
 
     <!-- Modals -->
     <div id="product-detail-modal" class="modal"> <div class="modal-content"> <button class="modal-close-btn">&times;</button> <div id="product-detail-content"></div> </div> </div>
-    <div id="buy-now-modal" class="modal"> <div class="modal-content"> <button class="modal-close-btn">&times;</button> <h3>Confirm Purchase</h3> <p>Please enter your details.</p> <form id="buy-now-form"> <div class="form-group"> <label for="buyer-name">Full Name</label> <input type="text" id="buyer-name" required> </div> <div class="form-group"> <label for="buyer-email">Email</label> <input type="email" id="buyer-email" required> </div> <div class="form-group"> <label for="buyer-phone">Phone</label> <input type="tel" id="buyer-phone" required> </div> <button type="submit" class=": pay">Proceed to Pay</button> </form> </div> </div>
+    <div id="buy-now-modal" class="modal"> <div class="modal-content"> <button class="modal-close-btn">&times;</button> <h3>Confirm Purchase</h3> <p>Please enter your details.</p> <form id="buy-now-form"> <div class="form-group"> <label for="buyer-name">Full Name</label> <input type="text" id="buyer-name" required> </div> <div class="form-group"> <label for="buyer-email">Email</label> <input type="email" id="buyer-email" required> </div> <div class="form-group"> <label for="buyer-phone">Phone</label> <input type="tel" id="buyer-phone" required> </div> <button type="submit" class="proceed-pay btn">Proceed to Pay</button> </form> </div> </div>
     <div id="login-signup-modal" class="modal"> <div class="modal-content"> <button class="modal-close-btn">&times;</button> <h3 id="auth-form-title">Login</h3> <form id="auth-form"> <div class="form-group"> <label for="auth-email">Email</label> <input type="email" id="auth-email" required> </div> <div class="form-group"> <label for="auth-password">Password</label> <input type="password" id="auth-password" required> </div> <button type="submit" id="auth-submit-btn" class="btn btn-primary btn-full">Login</button> <p style="text-align: center; margin-top: 15px;"> <a href="#" id="auth-toggle-link" style="color: var(--accent-color);">Need an account? Sign Up</a> </p> </form> </div> </div>
     <div id="policy-modal" class="modal"> <div class="modal-content"> <button class="modal-close-btn">&times;</button> <h2 id="policy-title"></h2> <div id="policy-content" style="line-height: 1.7; color: var(--secondary-text);"></div> </div> </div>
 
