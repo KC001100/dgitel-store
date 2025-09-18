@@ -12,9 +12,9 @@
             --bg-color: #121212;
             --surface-color: #1e1e1e;
             --surface-color-rgb: 30, 30, 30; /* UPDATE: RGB version for transparency */
-            --primary-text: #ffffff;
+            --primary-text: white;
             --secondary-text: #b3b3b3;
-            --accent-color: #00aaff;
+            --accent-color: #178236 ;
             --accent-hover: #0088cc;
             --border-color: #333333;
             --card-shadow: 0 10px 30px rgba(0,0,0,0.3);
@@ -26,7 +26,7 @@
             --bg-color: #f0f2f5;
             --surface-color: #ffffff;
             --surface-color-rgb: 255, 255, 255; /* UPDATE: RGB version for transparency */
-            --primary-text: #1c1e21;
+            --primary-text: #1c1e21whit;
             --secondary-text: #606770;
             --border-color: #dddfe2;
             --card-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -154,7 +154,7 @@
     <div class="sidebar-overlay" id="sidebar-overlay"></div>
     <div class="sidebar" id="sidebar"> <div class="sidebar-header"> <span id="username-display" class="username">Guest</span> </div> <nav id="sidebar-nav"></nav> </div>
     
-    <header> 
+    <header>
         <button class="hamburger-btn" id="hamburger-btn">☰</button> 
         <div class="header-brand"> 
             <img id="header-logo" src="https://i.ibb.co/20jmhmhM/Photoroom-20250913-191839.png" alt="Logo"> 
@@ -180,7 +180,7 @@
 
     <!-- Modals -->
     <div id="product-detail-modal" class="modal"> <div class="modal-content"> <button class="modal-close-btn">&times;</button> <div id="product-detail-content"></div> </div> </div>
-    <div id="buy-now-modal" class="modal"> <div class="modal-content"> <button class="modal-close-btn">&times;</button> <h3>Confirm Purchase</h3> <p>Please enter your details.</p> <form id="buy-now-form"> <div class="form-group"> <label for="buyer-name">Full Name</label> <input type="text" id="buyer-name" required> </div> <div class="form-group"> <label for="buyer-email">Email</label> <input type="email" id="buyer-email" required> </div> <div class="form-group"> <label for="buyer-phone">Phone</label> <input type="tel" id="buyer-phone" required> </div> <button type="submit" class="pay">Proceed to Pay</button> </form> </div> </div>
+    <div id="buy-now-modal" class="modal"> <div class="modal-content"> <button class="modal-close-btn">&times;</button> <h3>Confirm Purchase</h3> <p>Please enter your details.</p> <form id="buy-now-form"> <div class="form-group"> <label for="buyer-name">Full Name</label> <input type="text" id="buyer-name" required> </div> <div class="form-group"> <label for="buyer-email">Email</label> <input type="email" id="buyer-email" required> </div> <div class="form-group"> <label for="buyer-phone">Phone</label> <input type="tel" id="buyer-phone" required> </div> <button type="submit" class=": pay">Proceed to Pay</button> </form> </div> </div>
     <div id="login-signup-modal" class="modal"> <div class="modal-content"> <button class="modal-close-btn">&times;</button> <h3 id="auth-form-title">Login</h3> <form id="auth-form"> <div class="form-group"> <label for="auth-email">Email</label> <input type="email" id="auth-email" required> </div> <div class="form-group"> <label for="auth-password">Password</label> <input type="password" id="auth-password" required> </div> <button type="submit" id="auth-submit-btn" class="btn btn-primary btn-full">Login</button> <p style="text-align: center; margin-top: 15px;"> <a href="#" id="auth-toggle-link" style="color: var(--accent-color);">Need an account? Sign Up</a> </p> </form> </div> </div>
     <div id="policy-modal" class="modal"> <div class="modal-content"> <button class="modal-close-btn">&times;</button> <h2 id="policy-title"></h2> <div id="policy-content" style="line-height: 1.7; color: var(--secondary-text);"></div> </div> </div>
 
