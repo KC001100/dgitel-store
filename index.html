@@ -78,9 +78,9 @@
         .app-view.active { display: block; }
 
         /* Search Bar */
-        .search-container { margin-bottom: 30px; }
+        .search-container { margin-bottom: 20px; }
         #search-bar {
-            width: 100%; padding: 15px 20px; font-size: 16px; border-radius: 99px; border: 1px solid var(--border-color);
+            width: 100%; padding: 10px 15px; font-size: 16px; border-radius: 99px; border: 1px solid var(--border-color);
             background-color: var(--surface-color); color: var(--primary-text); box-shadow: 0 4px 10px rgba(0,0,0,0.05);
             transition: all 0.3s;
         }
@@ -88,7 +88,7 @@
 
         /* Product Grid & Cards */
         .product-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
-        @media (min-width: 768px) { .product-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; } }
+        @media (min-width:767 px) { .product-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; } }
 
         .product-card {
             background-color: var(--surface-color); border-radius: 16px; overflow: hidden; box-shadow: var(--card-shadow);
@@ -382,7 +382,7 @@ When You access the Service by or through a mobile device, We may collect certai
 We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device. </h4><p>We collect your name, email, and phone for transactions.</p><h4>2. Data Use</h4><p>We use your data to process orders and provide customer service. We do not sell your data.</h4><p>Payment details are handled by a secure third-party gateway.</p>`,
           
         };
-        const policyButtons = ['Refund Policy', 'Terms & Conditions', 'Privacy Policy', ];
+        const policyButtons = ['', 'Terms & Conditions', 'Privacy Policy', ];
         DOMElements.bottomBar.innerHTML = policyButtons.map(p => `<button data-policy="${p}">${p}</button>`).join('');
         DOMElements.bottomBar.addEventListener('click', e => {
             const key = e.target.dataset.policy;
